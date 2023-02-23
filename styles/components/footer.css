@@ -1,0 +1,105 @@
+footer {
+    margin-top: 50px;
+    background-color: #110e0e;
+    color: white;
+    padding: 20px;
+}
+
+.upper-links {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.capital-links {
+    text-transform: capitalize;
+    font-size: .7em;
+    font-weight: 100;
+    color: #979797;
+    margin-bottom: 10px;
+}
+
+.footer-contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-contain > .left-footer {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 28px;
+    cursor: pointer;
+
+}
+
+.footer-contain > .right-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: 100px; */
+    grid-column-gap: 10px;
+}
+
+.footer-contain > .right-footer > .icon-wrapper {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-contain > .right-footer > .icon-wrapper > i {
+    color: #110e0e;
+    background-color: #979797;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.14rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.footer-contain > .right-footer > .icon-wrapper > i:hover {
+    background-color: white;
+}
+
+.link-portofio {
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.link-portofio > p {
+    letter-spacing: 2px;
+}
+
+.link-portofio > p > a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid transparent;
+    transition: .2s;
+}
+
+.link-portofio > p > a:hover {
+    border-bottom: 2px solid white;
+    padding-bottom: 2.5px;
+
+}
+
+@media (max-width: 650px) {
+    .footer-contain {
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contain > .left-footer {
+        display: flex;
+        flex-direction: column;
+    }
+}
