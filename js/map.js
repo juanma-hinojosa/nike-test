@@ -17,7 +17,7 @@ http.onload = function () {
                         </div>
     
                         <div class="title-grid">
-                            <h3>${item.titulo}</h3>
+                            <h3>${item.titulo} <span class="name">${item.name}</span></h3>
                         </div>
     
                         <div class="parra-grid">
